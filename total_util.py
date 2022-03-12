@@ -235,7 +235,6 @@ __all__ = ['get_env_info', 'get_env_space']
 
 def get_env_space(env_id):
     env = gym.make(env_id)
-    # 解除环境限制
     # env = env.unwrapped
     num_states = env.observation_space.shape[0]
     if type(env.action_space) == Discrete:
@@ -249,7 +248,7 @@ import gym
 
 def get_env_info(env_id, unwrap=False):
     env = gym.make(env_id)
-    if unwrap:  # 解除环境限制
+    if unwrap:  
         env = env.unwrapped
     num_states = env.observation_space.shape[0]
     env_continuous = False
