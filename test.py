@@ -1,6 +1,3 @@
-#!/usr/bin/env python
-# Created at 2020/2/9
-
 import click
 
 from Algorithms.pytorch.DoubleDQN.double_dqn import DoubleDQN
